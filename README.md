@@ -1,5 +1,7 @@
-# Java<span style="color:blue;font">*Neural*</span>
-JavaNeural is a skeletal project for developing AI applications based on Java, the Encog framework, and the artificial neural network.
+# Mnist
+Mnist is a skeletal project for exploring
+aspects of [Computer Vision](https://en.wikipedia.org/wiki/Computer_vision) and
+the [MNIST](https://en.wikipedia.org/wiki/MNIST_database) database.
 ![](https://badgen.net/badge/Java/1.16/FF0000?icon=github)
 ![](https://badgen.net/badge/Encog/3.4/6E86FF?icon=github)
 ![](https://badgen.net/badge/OpenNLP/1.9.3/1ED760)
