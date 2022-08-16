@@ -64,8 +64,8 @@ public class MLoader implements IMLoader {
             // This is the dimension of each pixel: should be 28x28
             int nRows = pixelInputStream.readInt();
             int nCols = pixelInputStream.readInt();
-            assert nRows == 28: "bad number row count";
-            assert nCols == 28: "bad number column count";
+            assert nRows == 28: "bad row count";
+            assert nCols == 28: "bad column count";
 
             DataInputStream labelInputStream = new DataInputStream(new BufferedInputStream(new FileInputStream(labelsPath)));
 
