@@ -1,7 +1,9 @@
-# Mnist
-Mnist is a skeletal project for exploring Java,
-[Computer Vision](https://en.wikipedia.org/wiki/Computer_vision), and
+# Janist
+Janist is a skeletal project for exploring Java
+and
 the [MNIST](https://en.wikipedia.org/wiki/MNIST_database) database.
+It's the outset to study [Computer Vision](https://en.wikipedia.org/wiki/Computer_vision).
+
 ![](https://badgen.net/badge/Java/1.16/FF0000?icon=github)
 ![](https://badgen.net/badge/Encog/3.4/6E86FF?icon=github)
 ![](https://badgen.net/badge/OpenNLP/1.9.3/1ED760)

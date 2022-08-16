@@ -20,12 +20,48 @@
  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package mnist.loader;
+package nist.loader;
 
 /**
- * Represents an MNIST digit.
- * @param no Digit number
- * @param pixels Monochrome pixels
- * @param label Corresponding label: 0-9
+ * Interface to load the MNIST data.
+ * <p>There is one instance for each sample, ie, one for the training and one for the testing database.</p>
+ * @author Ron.Coleman
  */
-public record MDigit(int no, double[] pixels, int label) { }
+public interface IMLoader {
+    record Normal(double[][] pixels, double[][] labels) {}
+    ////////////////
+    // TODO: Add a constructor which takes the pixel and label paths.
+    ////////////////
+
+    /**
+     * Gets the pixel and label data in row-major order.
+     * @return Data in row-major order.
+     */
+    public MDigit[] load();
+
+    /**
+     * Gets the pixel magic number.
+     * @return Magic number
+     */
+    public int getPixelsMagic();
+
+    /**
+     * Gets the label magic number.
+     * @return Magic number
+     */
+    public int getLabelsMagic();
+
+    /**
+     * Gets the checksum.
+     * @return Checksum
+     */
+    public long getChecksum();
+
+    public int getNumDigits();
+
+    /**
+     * Normalizes the data.
+     * @return Normalized data
+     */
+    public Normal normalize();
+}
